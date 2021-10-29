@@ -95,7 +95,6 @@ def read_data(con, table_name, rowid):
     cur.execute(read_record)
     result_pos = cur.fetchone()
     con.commit()
-    #con.close()
     return result_pos
 
 
